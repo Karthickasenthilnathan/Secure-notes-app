@@ -40,7 +40,7 @@ function Dashboard() {
 
     try {
 
-      await api.post("/notes", {
+      await api.post("/notes/", {
         title: title,
         content: content
       })
