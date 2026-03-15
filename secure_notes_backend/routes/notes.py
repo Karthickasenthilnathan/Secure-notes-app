@@ -10,7 +10,7 @@ from core.dependencies import get_current_user
 router=APIRouter(prefix="/notes", tags=["Notes"])
 
 
-@router.post("/", response_model=NoteOut)
+@router.post("/notes/", response_model=NoteOut)
 def create_note(
     note: NoteCreate,
     db: Session = Depends(get_db),
